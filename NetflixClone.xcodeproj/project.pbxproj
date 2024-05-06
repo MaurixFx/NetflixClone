@@ -12,6 +12,7 @@
 		D58AECB32BE8CD4500C3DC2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58AECB22BE8CD4500C3DC2B /* Preview Assets.xcassets */; };
 		D58AECBC2BE8CFC000C3DC2B /* NetflixHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58AECBB2BE8CFC000C3DC2B /* NetflixHomeView.swift */; };
 		D5991ACA2BE8D4BD009EAB76 /* NetflixFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5991AC92BE8D4BD009EAB76 /* NetflixFilterCell.swift */; };
+		D5991ACC2BE8D8C1009EAB76 /* NetflixFilterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5991ACB2BE8D8C1009EAB76 /* NetflixFilterBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D58AECB22BE8CD4500C3DC2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D58AECBB2BE8CFC000C3DC2B /* NetflixHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixHomeView.swift; sourceTree = "<group>"; };
 		D5991AC92BE8D4BD009EAB76 /* NetflixFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixFilterCell.swift; sourceTree = "<group>"; };
+		D5991ACB2BE8D8C1009EAB76 /* NetflixFilterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixFilterBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				D5991AC92BE8D4BD009EAB76 /* NetflixFilterCell.swift */,
+				D5991ACB2BE8D8C1009EAB76 /* NetflixFilterBarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D58AECAC2BE8CD4300C3DC2B /* NetflixCloneApp.swift in Sources */,
+				D5991ACC2BE8D8C1009EAB76 /* NetflixFilterBarView.swift in Sources */,
 				D5991ACA2BE8D4BD009EAB76 /* NetflixFilterCell.swift in Sources */,
 				D58AECBC2BE8CFC000C3DC2B /* NetflixHomeView.swift in Sources */,
 			);
