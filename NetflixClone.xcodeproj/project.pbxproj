@@ -13,6 +13,11 @@
 		D58AECBC2BE8CFC000C3DC2B /* NetflixHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58AECBB2BE8CFC000C3DC2B /* NetflixHomeView.swift */; };
 		D5991ACA2BE8D4BD009EAB76 /* NetflixFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5991AC92BE8D4BD009EAB76 /* NetflixFilterCell.swift */; };
 		D5991ACC2BE8D8C1009EAB76 /* NetflixFilterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5991ACB2BE8D8C1009EAB76 /* NetflixFilterBarView.swift */; };
+		D5991ACE2BE90839009EAB76 /* NetflixHeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5991ACD2BE90839009EAB76 /* NetflixHeroCell.swift */; };
+		D5991AD12BE909BE009EAB76 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D5991AD02BE909BE009EAB76 /* SDWebImageSwiftUI */; };
+		D5991AD42BE91166009EAB76 /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = D5991AD32BE91166009EAB76 /* SwiftfulUI */; };
+		D5991AD72BE95EF6009EAB76 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5991AD62BE95EF6009EAB76 /* Media.swift */; };
+		D5991AD92BE96F48009EAB76 /* NetflixMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5991AD82BE96F48009EAB76 /* NetflixMovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,9 @@
 		D58AECBB2BE8CFC000C3DC2B /* NetflixHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixHomeView.swift; sourceTree = "<group>"; };
 		D5991AC92BE8D4BD009EAB76 /* NetflixFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixFilterCell.swift; sourceTree = "<group>"; };
 		D5991ACB2BE8D8C1009EAB76 /* NetflixFilterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixFilterBarView.swift; sourceTree = "<group>"; };
+		D5991ACD2BE90839009EAB76 /* NetflixHeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixHeroCell.swift; sourceTree = "<group>"; };
+		D5991AD62BE95EF6009EAB76 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		D5991AD82BE96F48009EAB76 /* NetflixMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixMovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5991AD42BE91166009EAB76 /* SwiftfulUI in Frameworks */,
+				D5991AD12BE909BE009EAB76 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +65,7 @@
 		D58AECAA2BE8CD4300C3DC2B /* NetflixClone */ = {
 			isa = PBXGroup;
 			children = (
+				D5991AD52BE95EED009EAB76 /* Models */,
 				D58AECBA2BE8CFB500C3DC2B /* Components */,
 				D58AECB92BE8CFAF00C3DC2B /* Core */,
 				D58AECAB2BE8CD4300C3DC2B /* NetflixCloneApp.swift */,
@@ -85,8 +96,18 @@
 			children = (
 				D5991AC92BE8D4BD009EAB76 /* NetflixFilterCell.swift */,
 				D5991ACB2BE8D8C1009EAB76 /* NetflixFilterBarView.swift */,
+				D5991ACD2BE90839009EAB76 /* NetflixHeroCell.swift */,
+				D5991AD82BE96F48009EAB76 /* NetflixMovieCell.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		D5991AD52BE95EED009EAB76 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5991AD62BE95EF6009EAB76 /* Media.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +126,10 @@
 			dependencies = (
 			);
 			name = NetflixClone;
+			packageProductDependencies = (
+				D5991AD02BE909BE009EAB76 /* SDWebImageSwiftUI */,
+				D5991AD32BE91166009EAB76 /* SwiftfulUI */,
+			);
 			productName = NetflixClone;
 			productReference = D58AECA82BE8CD4300C3DC2B /* NetflixClone.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +158,10 @@
 				Base,
 			);
 			mainGroup = D58AEC9F2BE8CD4300C3DC2B;
+			packageReferences = (
+				D5991ACF2BE909BE009EAB76 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				D5991AD22BE91166009EAB76 /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+			);
 			productRefGroup = D58AECA92BE8CD4300C3DC2B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,8 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5991ACE2BE90839009EAB76 /* NetflixHeroCell.swift in Sources */,
 				D58AECAC2BE8CD4300C3DC2B /* NetflixCloneApp.swift in Sources */,
+				D5991AD72BE95EF6009EAB76 /* Media.swift in Sources */,
 				D5991ACC2BE8D8C1009EAB76 /* NetflixFilterBarView.swift in Sources */,
+				D5991AD92BE96F48009EAB76 /* NetflixMovieCell.swift in Sources */,
 				D5991ACA2BE8D4BD009EAB76 /* NetflixFilterCell.swift in Sources */,
 				D58AECBC2BE8CFC000C3DC2B /* NetflixHomeView.swift in Sources */,
 			);
@@ -368,6 +400,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D5991ACF2BE909BE009EAB76 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
+		D5991AD22BE91166009EAB76 /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D5991AD02BE909BE009EAB76 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5991ACF2BE909BE009EAB76 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		D5991AD32BE91166009EAB76 /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5991AD22BE91166009EAB76 /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D58AECA02BE8CD4300C3DC2B /* Project object */;
 }
