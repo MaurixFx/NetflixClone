@@ -15,42 +15,66 @@ struct NetflixHomeView: View {
     @State private var fullHeaderSize: CGSize = .zero
     @State private var heroMovie: Media? = nil
     @State private var mediaContentSections: [MediaContent] = []
+    @State private var scrollViewOffset: CGFloat = 0
     
     var body: some View {
         ZStack(alignment: .top) {
             Color.netflixBlack.ignoresSafeArea()
             
-            ScrollView(.vertical) {
-                VStack(spacing: 8) {
-                    Rectangle()
-                        .opacity(0)
-                        .frame(height: fullHeaderSize.height)
-                    
-                    if let heroMovie {
-                        heroCell(with: heroMovie)
-                    }
-                    
-                    moviesSections
-                }
-            }
-            .scrollIndicators(.hidden)
+            backgroundGradientLayer
             
-            VStack(spacing: .zero) {
-                header
-                    .padding(.horizontal, 16)
-                
-                filtersBarView
-            }
-            .background(.netflixRed)
-            .readingFrame { frame in
-                fullHeaderSize = frame.size
-            }
+            scrollViewLayer
+            
+            fullHeaderWithFiltersView
         }
         .foregroundStyle(.netflixWhite)
         .task {
             await loadMovies()
         }
         .toolbar(.hidden, for: .navigationBar)
+    }
+    
+    private var fullHeaderWithFiltersView: some View {
+        VStack(spacing: .zero) {
+            header
+                .padding(.horizontal, 16)
+            
+            if scrollViewOffset > -20 {
+                filtersBarView
+                    .transition(.move(edge: .top).combined(with: .opacity))
+            }
+        }
+        .padding(.bottom, 8)
+        .background(
+            ZStack {
+                if scrollViewOffset < -70 {
+                    Rectangle()
+                        .fill(Color.clear)
+                        .background(.ultraThinMaterial)
+                        .brightness(-0.2)
+                        .ignoresSafeArea()
+                }
+            }
+        )
+        .animation(.smooth, value: scrollViewOffset)
+        .readingFrame { frame in
+            if fullHeaderSize == .zero {
+                fullHeaderSize = frame.size
+            }
+        }
+    }
+    
+    private var backgroundGradientLayer: some View {
+        ZStack {
+            LinearGradient(colors: [.netflixGray.opacity(1), .netflixGray.opacity(0)], startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
+            
+            LinearGradient(colors: [.netflixDarkRed.opacity(0.5), .netflixGray.opacity(0)], startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
+        }
+        .frame(maxHeight: max(10, (400 + (scrollViewOffset * 0.75))))
+        .opacity(scrollViewOffset < -250 ? 0 : 1)
+        .animation(.easeInOut, value: scrollViewOffset)
     }
     
     private var header: some View {
@@ -97,6 +121,24 @@ struct NetflixHomeView: View {
         .padding(20)
     }
     
+    private var scrollViewLayer: some View {
+        ScrollViewWithOnScrollChanged(.vertical, showsIndicators: false) {
+            VStack(spacing: 8) {
+                Rectangle()
+                    .opacity(0)
+                    .frame(height: fullHeaderSize.height)
+                
+                if let heroMovie {
+                    heroCell(with: heroMovie)
+                }
+                
+                moviesSections
+            }
+        } onScrollChanged: { offset in
+            scrollViewOffset = min(0, offset.y)
+        }
+    }
+    
     private var moviesSections: some View {
         LazyVStack(alignment: .leading, spacing: 16) {
             ForEach(Array(mediaContentSections.enumerated()), id: \.offset) { (sectionIndex, section) in
@@ -122,18 +164,12 @@ struct NetflixHomeView: View {
     }
     
     private func loadMovies() async {
-        guard let url = URL(string: "https://run.mocky.io/v3/8c2d40d1-b182-413c-8a89-f7e80ae710a3") else {
+        guard let contentSections: [MediaContent] = JSONReader.readJSONFromFile(fileName: "movie") else {
             return
         }
         
-        do {
-            let (data, response) = try await URLSession.shared.data(from: url)
-            
-            mediaContentSections = try JSONDecoder().decode([MediaContent].self, from: data)
-            heroMovie = mediaContentSections.first?.media.first
-        } catch {
-            print(error.localizedDescription)
-        }
+        mediaContentSections = contentSections
+        heroMovie = mediaContentSections.first?.media.first
     }
 }
 

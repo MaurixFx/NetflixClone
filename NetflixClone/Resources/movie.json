@@ -1,0 +1,400 @@
+[
+    {
+        "title": "10 most popular movies in Europe today",
+        "media": [
+            {
+                "title": "Avengers end game",
+                "imageURL": "https://www.cnet.com/a/img/resize/afb1945b31553103994810a6a03212f7871cd563/hub/2019/04/17/00179de0-f6b9-4787-9e97-f0051142832e/avengersskinner.jpg?auto=webp&width=1200",
+                "categories": ["action", "superhero"],
+                "isRecentlyAdded": true
+            },
+            {
+                "title": "Interstellar",
+                "imageURL": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+                "categories": [
+                  "action",
+                  "drama"
+                ],
+                "isRecentlyAdded": false
+              },
+              {
+                "title": "World War Z",
+                "imageURL": "https://m.media-amazon.com/images/M/MV5BNDQ4YzFmNzktMmM5ZC00MDZjLTk1OTktNDE2ODE4YjM2MjJjXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
+                "categories": [
+                  "action",
+                  "drama"
+                ],
+                "isRecentlyAdded": false
+              },
+              {
+                "title": "Taken",
+                "imageURL": "https://lumiere-a.akamaihd.net/v1/images/image_efeee89d.jpeg",
+                "categories": [
+                  "action",
+                  "drama"
+                ],
+                "isRecentlyAdded": true
+              },
+              {
+                "title": "Matrix",
+                "imageURL": "https://i.etsystatic.com/23402008/r/il/5c021e/2326618902/il_fullxfull.2326618902_brqu.jpg",
+                "categories": [
+                  "action",
+                  "drama"
+                ],
+                "isRecentlyAdded": false
+              },
+              {
+                "title": "I am legend",
+                "imageURL": "https://m.media-amazon.com/images/M/MV5BYTE1ZTBlYzgtNmMyNS00ZTQ2LWE4NjEtZjUxNDJkNTg2MzlhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+                "categories": [
+                  "action",
+                  "drama",
+                  "thriller",
+                  "fantasy"
+                ],
+                "isRecentlyAdded": false
+              },
+              {
+                "title": "The conjuring",
+                "imageURL": "https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_.jpg",
+                "categories": [
+                  "thriller",
+                  "drama",
+                  "action"
+                ],
+                "isRecentlyAdded": true
+              },
+              {
+                "title": "Captain Marvel",
+                "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSxukDGJjBtSJiNTkCXNHsylC8GfxHescYaZQRotx6mQ&s",
+                "categories": [
+                  "action",
+                  "drama",
+                  "superhero"
+                ],
+                "isRecentlyAdded": false
+              },
+              {
+                "title": "The guardians of the galaxy",
+                "imageURL": "https://imgix.ranker.com/user_node_img/50043/1000847591/original/guardians-of-the-galaxy-photo-u1?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=375",
+                "categories": [
+                  "action",
+                  "drama",
+                  "superhero"
+                ],
+                "isRecentlyAdded": false
+              },
+              {
+                "title": "Jackass",
+                "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8Mu0fWM4e02G9gytK1OEQV8LHQ35rhRwOJmW7-81ig&s",
+                "categories": [
+                  "comedy",
+                  "action"
+                ],
+                "isRecentlyAdded": true
+              }
+        ]
+    },
+    {
+        "title": "10 most popular series in Europe today",
+        "media": [
+            {
+                "title": "Game of Thrones",
+                "imageURL": "https://m.media-amazon.com/images/I/91iY86ZIuOL._AC_UF894,1000_QL80_.jpg",
+                "categories": ["action", "drama", "scienceFiction"],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "House of the dragon",
+                "imageURL": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781647225285/game-of-thrones-house-of-the-dragon-9781647225285_hr.jpg",
+                "categories": ["action", "drama", "scienceFiction"],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "Peaky Blinders",
+                "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7vy7MZxF4FkRqdWC5J_K09Lhc4aXPQ2dV_hCwCFqdw&s",
+                "categories": ["action", "drama", "crime"],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "Stranger Things",
+                "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj-CkTwgCYhKeBSbaJfs436MQg697IKyyozl2HhBpCBQ&s",
+                "categories": ["action", "drama", "fantasy", "scienceFiction"],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "La casa de papel",
+                "imageURL": "https://i.redd.it/1ace5qxjr9m41.jpg",
+                "categories": ["action", "drama", "crime"],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "The Walking Dead",
+                "imageURL": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781608874439/the-walking-dead-9781608874439_hr.jpg",
+                "categories": ["action", "drama"],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "Narcos",
+                "imageURL": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/narcos-pablo-escobar-poster-joshua-williams.jpg",
+                "categories": ["action", "drama", "crime"],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "The Witcher",
+                "imageURL": "https://static.wikia.nocookie.net/witcher/images/b/b2/Netflix_poster_s2.jpg/revision/latest?cb=20211213144024",
+                "categories": ["action", "drama", "fantasy"],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "Breaking bad",
+                "imageURL": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/8819/8819802_so.jpg",
+                "categories": ["action", "drama", "crime"],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "Vikings",
+                "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRLr5uLcIklQldd-3E51di1LOqHWGQZP-wTJOwDU5WHw&s",
+                "categories": ["action", "drama", "crime"],
+                "isRecentlyAdded": false
+            }
+        ]
+    },
+    {
+        "title": "Movies to laugh",
+        "media": [
+            {
+                "title": "Jackass",
+                "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8Mu0fWM4e02G9gytK1OEQV8LHQ35rhRwOJmW7-81ig&s",
+                "categories": [
+                  "comedy",
+                  "action"
+                ],
+                "isRecentlyAdded": true
+            },
+            {
+                "title": "Me, myself, Irene",
+                "imageURL": "https://m.media-amazon.com/images/M/MV5BODMwMDY2YzUtNGFiNS00NDA1LWI4YzMtYzVmM2RlZTk3NGVlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+                "categories": [
+                  "comedy",
+                  "action"
+                ],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "Hangover",
+                "imageURL": "https://www.discountdisplays.co.uk/our-blog/wp-content/uploads/the-hangover-movie-poster.jpg",
+                "categories": [
+                  "comedy",
+                  "action"
+                ],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "Norbit",
+                "imageURL": "https://www.orphicpixel.com/wp-content/uploads/2012/03/image001.jpg",
+                "categories": [
+                  "comedy",
+                  "action"
+                ],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "Little man",
+                "imageURL": "https://www.orphicpixel.com/wp-content/uploads/2012/03/image006.jpg",
+                "categories": [
+                  "comedy",
+                  "action"
+                ],
+                "isRecentlyAdded": false
+            }
+        ]
+    },
+    {
+        "title": "Action movies",
+        "media": [
+            {
+                "title": "Taken",
+                "imageURL": "https://lumiere-a.akamaihd.net/v1/images/image_efeee89d.jpeg",
+                "categories": [
+                  "action",
+                  "drama"
+                ],
+                "isRecentlyAdded": true
+            },
+            {
+                "title": "Matrix",
+                "imageURL": "https://i.etsystatic.com/23402008/r/il/5c021e/2326618902/il_fullxfull.2326618902_brqu.jpg",
+                "categories": [
+                  "action",
+                  "drama"
+                ],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "The guardians of the galaxy",
+                "imageURL": "https://imgix.ranker.com/user_node_img/50043/1000847591/original/guardians-of-the-galaxy-photo-u1?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=375",
+                "categories": [
+                  "action",
+                  "drama",
+                  "superhero"
+                ],
+                "isRecentlyAdded": false
+              },
+            {
+                "title": "I am legend",
+                "imageURL": "https://m.media-amazon.com/images/M/MV5BYTE1ZTBlYzgtNmMyNS00ZTQ2LWE4NjEtZjUxNDJkNTg2MzlhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+                "categories": [
+                  "action",
+                  "drama",
+                  "thriller",
+                  "fantasy"
+                ],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "Avengers end game",
+                "imageURL": "https://www.cnet.com/a/img/resize/afb1945b31553103994810a6a03212f7871cd563/hub/2019/04/17/00179de0-f6b9-4787-9e97-f0051142832e/avengersskinner.jpg?auto=webp&width=1200",
+                "categories": [
+                  "action",
+                  "superhero"
+                ],
+                "isRecentlyAdded": true
+            },
+            {
+                "title": "Superman returns",
+                "imageURL": "https://www.indiewire.com/wp-content/uploads/2017/05/superman-returns-2006.jpg?w=510",
+                "categories": [
+                  "action",
+                  "drama",
+                  "superhero"
+                ],
+                "isRecentlyAdded": false
+              },
+              {
+                "title": "Ironman",
+                "imageURL": "https://media.comicbook.com/2017/10/iron-man-movie-poster-marvel-cinematic-universe-1038878.jpg",
+                "categories": [
+                  "action",
+                  "drama",
+                  "superhero"
+                ],
+                "isRecentlyAdded": true
+              },
+              {
+                "title": "Hulk",
+                "imageURL": "https://www.indiewire.com/wp-content/uploads/2017/05/the-incredible-hulk-2008.jpg?w=674",
+                "categories": [
+                  "action",
+                  "drama",
+                  "superhero"
+                ],
+                "isRecentlyAdded": false
+              },
+              {
+                "title": "Captain Marvel",
+                "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSxukDGJjBtSJiNTkCXNHsylC8GfxHescYaZQRotx6mQ&s",
+                "categories": [
+                  "action",
+                  "drama",
+                  "superhero"
+                ],
+                "isRecentlyAdded": false
+              },
+              {
+                "title": "World War Z",
+                "imageURL": "https://m.media-amazon.com/images/M/MV5BNDQ4YzFmNzktMmM5ZC00MDZjLTk1OTktNDE2ODE4YjM2MjJjXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
+                "categories": [
+                  "action",
+                  "drama"
+                ],
+                "isRecentlyAdded": false
+            }
+        ]
+    },
+    {
+        "title": "Movies to get scared",
+        "media":[
+            {
+                "title": "The conjuring",
+                "imageURL": "https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_.jpg",
+                "categories": [
+                  "thriller",
+                  "drama",
+                  "action"
+                ],
+                "isRecentlyAdded": true
+            },
+            {
+                "title": "World War Z",
+                "imageURL": "https://m.media-amazon.com/images/M/MV5BNDQ4YzFmNzktMmM5ZC00MDZjLTk1OTktNDE2ODE4YjM2MjJjXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
+                "categories": [
+                  "action",
+                  "drama"
+                ],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "Chucky",
+                "imageURL": "https://m.media-amazon.com/images/M/MV5BZTcxZDE5Y2MtODNmOC00YjQ0LTk3YzQtZWU1OTU2ZTgwNDVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+                "categories": [
+                  "action",
+                  "drama",
+                  "thriller"
+                ],
+                "isRecentlyAdded": true
+            },
+            {
+                "title": "Annabelle",
+                "imageURL": "https://m.media-amazon.com/images/M/MV5BOTQwZmQyYzEtODk5ZC00OTY3LWExMjAtYzRjNWFhNGM3MzBlXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_FMjpg_UX1000_.jpg",
+                "categories": [
+                  "action",
+                  "drama",
+                  "thriller"
+                ],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "The Nun",
+                "imageURL": "https://i.pinimg.com/736x/a3/c4/68/a3c468922d885d6d51937a2c7680b331.jpg",
+                "categories": [
+                  "action",
+                  "drama",
+                  "thriller"
+                ],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "IT",
+                "imageURL": "https://m.media-amazon.com/images/I/61TyIq+0VhL._AC_UF894,1000_QL80_DpWeblab_.jpg",
+                "categories": [
+                  "action",
+                  "drama",
+                  "thriller"
+                ],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "Scream",
+                "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGffSpVMDG0jwHcJFHQVCZT-6406-GNOB0F2lHuieyYw&s",
+                "categories": [
+                  "action",
+                  "drama",
+                  "thriller"
+                ],
+                "isRecentlyAdded": false
+            },
+            {
+                "title": "Saw",
+                "imageURL": "https://img.buzzfeed.com/buzzfeed-static/static/2020-10/23/18/asset/e242c16939e4/sub-buzz-586-1603478774-38.jpg?resize=990:1481",
+                "categories": [
+                  "action",
+                  "drama",
+                  "thriller"
+                ],
+                "isRecentlyAdded": false
+            }
+        ]
+    }
+]
